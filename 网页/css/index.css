@@ -1,0 +1,51 @@
+/* 主体部分 */
+.part{
+    height:auto;
+   
+    margin:20px 0px;
+    }
+
+    .part  ul{
+        height:auto;
+        background-color: #f5f5f5af;
+        margin-bottom: 20px; 
+        border-radius: 5px;
+        overflow: hidden;
+
+    } 
+    .part ul li h2{
+        padding:20px 0px 0px 20px;
+    }
+    .content{
+        font-size: 16px;
+        color:rgb(58, 58, 58);
+        padding:60px 20px 20px;
+        text-indent: 30px;
+    }
+    .part ul li h5{
+        float: left;
+        height: 40px; 
+        width: 40px;
+        background-color:grey;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+
+    .information  h3{
+        float:left;
+        margin-left: 10px;
+        margin-top: 20px;
+        font-family: 宋体;
+        font-size: 15px;
+    }
+
+    .information p{
+        /* padding-top: 35px ; */
+     
+    }
+
+
+
+
