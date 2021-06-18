@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>树洞</title>
+    <!-- 网站说明 -->
+    <meta name="description" content="树洞网-让每个人都可以敞开心扉诉说内心的故事。旨在打造一个温暖的、积极的、包容互助平台，寄存心事收纳秘密化解烦闷，从而更加淡定从容地拥抱未来">
+    <!-- 关键字 -->
+    <meta name="keywords" content="树洞，心事，聊天,倾诉">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <!-- 引入初始化样式 -->
+     <link rel="stylesheet" href="css/base.css">
+    <!-- 引入公用样式文件 -->
+     <link rel="stylesheet" href="css/common.css">
+
+     <link rel="stylesheet" href="css/post.css">
+     <script type="text/javascript" src="js/123.js"></script>
+</head>
+
+<body >
+
+  <!--shortcut -->
+  <section class="shortcut">
+    <div class="w">
+        <div class="fl">    
+           <ul>
+             <li><div class="logo"><a href="index.html"><img src="images/树洞.png"/></a></div> </li>
+             <li> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                 <input type="text" required="required" class="search" placeholder="搜索你感兴趣的内容" name="u"></input>
+                 <input type="button" value="">             
+            </li>
+            </ul>
+        </div>
+
+        <div class="fr">
+         <ul>
+              <li>树洞欢迎您！&nbsp;</li>
+             <li>
+                 <a href="index.html" class="style_blue">首页</a>
+                 <a href="login.html" class="style_blue">登录</a>
+                 <a href="register.html" class="style_blue">注册</a>
+             </li>
+         </ul>
+           
+        </div>
+    </div>
+
+
+  <audio controls preload="preload" autoplay="autoplay" loop="loop">
+            <source src="music/bgm.mp3" type="audio/mpeg">
+   </audio>
+ 
+   
+   </section>
+  <!-- 发帖界面    -->
+   <div class="w">
+   <section class="post">
+       
+         <div id="container">
+                  <div class="aside">
+                       <h5>头像</h5>
+                       <a href="个人页面.html"><h4>id号</h4></a>
+                       <h3>日期和时间</h3>
+                 </div>
+               <div class="content"> 
+                   <div class="title">  <h2>关于树洞网的一些问答</h2> </div>       
+                    <div class="cont">
+                   <h4>1、在树洞网倾诉，个人信息会被他人知晓吗？</h4>
+                   <h5>答：树洞网采取了伪匿名形式，用户的所有发布行为，都需要选择“匿名角色”后进行，后台的回信人员，看到的均是匿名角色信息，除正文外，其他用户信息，均不可见。</h5>
+                   <h4>2、发布倾诉和愿望后，多久可以审核通过？</h4>
+                   <h5>答：由于树洞的回信小伙伴都是和我们一样有工作和家庭，都是利用业余时间进行聆听与回复，因此回信速度会略慢，还请耐心等待，一般一个星期内可以进行回复。</h5>
+                   <h4>3、可以自行删除树洞吗？</h4>
+                   <h5>答：我们倡导勇敢面对现状及历史，这样才能让我们真正的找到自己的不足，更好地把握未来，因此，目前暂无计划开放删除历史倾诉的功能。不过，树洞伪匿名系统会对用户的信息进行保护，因此也不必担心隐私泄漏哦。</h5>
+                    </div>
+
+                </div>
+    
+            </div>
+
+    </section>
+
+
+
+
+    <!-- 用户评论区 -->
+    <section>
+    <div id="usercomment">
+       <h2>评论</h2>  
+       <form method="post">
+       <textArea  placeholder="请留下你的评论"  id="te"></textArea>  
+       <input floar right type="button" value="发布" class="btn" οnclick="add()">
+       </form>
+    </div>
+    </section>
+
+
+
+
+    <!-- 评论区展示 -->
+    </section>
+    <div id="comment">  
+    <h1>用户评论</h1>
+    <hr>
+               <div class="information">
+                    <h5>头像</h5>
+                    <h4>id号</h4>
+                    <h3>日期和时间</h3>
+                </div>
+                    <h4>最近反思+反省，做了一件事，删掉了微信里不相干的人或者以后也不会有关系的‘朋友’，到底有几个是朋友？算什么朋友圈？我还是会经常发朋友圈，关于生活，心情与孩子，可是我看到的朋友圈却一点感情都没有的。拉到底部显示有一千多人，可是又有几个人是真正认识或者能聊上几句的，感觉一个手就能数清楚，有时候一个手都嫌多了，所以这两天疯狂删人，剩下600人，感觉还能缩减一点。</h4>
+        <hr>
+        <div class="information">
+                    <h5>头像</h5>
+                    <h4>id号</h4>
+                <h3>日期和时间</h3>
+            </div>
+                    <h4>最近反思+反省，做了一件事，删掉了微信里不相干的人或者以后也不会有关系的‘朋友’，到底有几个是朋友？算什么朋友圈？我还是会经常发朋友圈，关于生活，心情与孩子，可是我看到的朋友圈却一点感情都没有的。拉到底部显示有一千多人，可是又有几个人是真正认识或者能聊上几句的，感觉一个手就能数清楚，有时候一个手都嫌多了，所以这两天疯狂删人，剩下600人，感觉还能缩减一点。</h4>
+        <hr>
+              <div class="information">
+                    <h5>头像</h5>
+                    <h4>id号</h4>
+                    <h3>日期和时间</h3>
+                    </div>
+                    <h4>最近反思+反省，做了一件事，删掉了微信里不相干的人或者以后也不会有关系的‘朋友’，到底有几个是朋友？算什么朋友圈？我还是会经常发朋友圈，关于生活，心情与孩子，可是我看到的朋友圈却一点感情都没有的。拉到底部显示有一千多人，可是又有几个人是真正认识或者能聊上几句的，感觉一个手就能数清楚，有时候一个手都嫌多了，所以这两天疯狂删人，剩下600人，感觉还能缩减一点。</h4>
+        <hr>
+    </div>
+
+   </section>
+
+</div>
+
+
+
+<!-- footer部分 -->
+ <footer class="footer">
+        <div class="w">
+   
+
+            <div class="mod_service"> 
+                <div class="mod_service1">
+            <ul>
+                <li>
+                    <h5></h5>
+                    <div class="service_txt">
+                        <h4>微信公众号</h4>
+                    </div>
+                 </li>
+           </ul>
+            </div> 
+         
+               <div class="mod_service2">
+                   <ul>
+                 <li>
+                    <h5></h5>
+                    <div class="service_txt">
+                        <h4>网站QQ群</h4>
+                    </div>
+                 </li>
+                </ul>
+                </div>
+           </div>
+
+  <div class="mod_copyright">
+    <div class="links"> |  <a href="#">公司简介</a> | <a href="#">联系方式</a> | <a href="#">客户服务</a> | <a href="#">隐私政策</a> | <a href="#">广告服务</a> | <a href="#">招聘信息</a> | <a href="#">不良信息举报</a> |</div>
+    <div class="copyright">
+        树洞网——分享你的心情，实现你的愿望，倾听你的感受<br>
+   Copyright © 2021 计算机职业实践课程 版权所有 粤ICP备00000000号
+     </div>
+  </div>                           
+  </div>
+</footer>
+
+
+</html>

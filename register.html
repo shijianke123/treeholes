@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="shortcut icon" href="images/favicon.ico" />
+
+
+    <style>
+        html {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            font-style: sans-serif;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            margin: 150px 100px 0 600px;
+            background-image: url(images/背景图.jpg);
+            background-repeat: non-repeat;
+            background-size: 100%100%;
+            background-attachment: fixed;
+        }
+
+        #login {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300px;
+            height: 300px;
+        }
+
+        #login h1 {
+            color: #f5efef;
+            text-shadow: 0 0 10px;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin: 0.67em 0;
+            color: white;
+        }
+
+        input {
+            width: 278px;
+            height: 18px;
+            margin-bottom: 10px;
+            outline: none;
+            padding: 10px;
+            font-size: 13px;
+            color: #fff;
+            text-shadow: 1px 1px 1px;
+            border-top: 1px solid #353144;
+            border-left: 1px solid #312E3D;
+            border-right: 1px solid #312E3D;
+            border-bottom: 1px solid #56536A;
+            border-radius: 4px;
+            background-color: #2D2D3F;
+        }
+
+        .but {
+            width: 300px;
+            min-height: 20px;
+            display: block;
+            background-color: #19253fef;
+            border: 1px solid #0f1930;
+            color: #fff;
+            padding: 9px 14px;
+            font-size: 15px;
+            line-height: normal;
+            border-radius: 5px;
+            margin: 0;
+        }
+
+        span {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .ver {
+            width: 200px;
+            height: 18px;
+            margin-bottom: 10px;
+            outline: none;
+            padding: 10px;
+            font-size: 13px;
+            color: #fff;
+            text-shadow: 1px 1px 1px;
+            border-top: 1px solid #353144;
+            border-left: 1px solid #312E3D;
+            border-right: 1px solid #312E3D;
+            border-bottom: 1px solid #56536A;
+            border-radius: 4px;
+            background-color: #2D2D3F;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        div {
+            width: 36px;
+            min-height: 20px;
+            display: block;
+            background-color: #19253fef;
+            border: 1px solid #0f1930;
+            color: #fff;
+            padding: 9px 14px;
+            font-size: 15px;
+            line-height: normal;
+            border-radius: 5px;
+            margin: 0;
+        }
+    </style>
+
+    <script>
+        function validate_password() {
+            var pw1 = document.getElementById("pw1").value;
+            var pw2 = document.getElementById("pw2").value;
+            if (pw1 == pw2) {
+                document.getElementById("tishi").innerHTML = "<font color='white'>两次密码相同</font>";
+                document.getElementById("submit").disabled = false;
+            }
+            else {
+                document.getElementById("tishi").innerHTML = "<font color='red'>两次密码不相同</font>";
+                document.getElementById("submit").disabled = true;
+            }
+        }
+        function validate() {
+            var ver = document.getElementById("verification").value;
+            if (ver == "48w6" || ver == "48W6") {
+                document.getElementById("tishi_2").innerHTML = "<font color='white'>验证码正确</font>";
+                document.getElementById("submit").disabled = false;
+            }
+            else {
+                document.getElementById("tishi_2").innerHTML = "<font color='red'>验证码错误</font>";
+                document.getElementById("submit").disabled = true;
+            }
+        }
+        function openNewWindow() {
+            window.open('index.html');
+        }
+    </script>
+
+</head>
+
+<body>
+    <p id="register">
+    <h1>注册</h1>
+    <form method="post">
+
+        <input type="text" required="required" placeholder="用户名" name="u"></input> <br />
+        <input type="password" required="required" id="pw1" placeholder="密码" name="p_1"></input> <br />
+        <input type="password" name="pw" id="pw2" onkeyup="validate_password() " placeholder="确认密码" /><span
+            id="tishi"></span><br />
+        <input type="text" class="ver" name="verification" id="verification" onkeyup="validate() "
+            placeholder="验证码" /><img src="images/验证码.jpg"
+            style="width: 78px;vertical-align:middle;height:36px ;" /><span id="tishi_2"></span><br />
+        <div><a href="register_2.html">注册</a></div>
+
+    </form>
+    </p>
+</body>
+
+</html>

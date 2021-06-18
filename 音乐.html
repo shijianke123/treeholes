@@ -1,0 +1,69 @@
+<body>
+    <div class="bgm_echo"></div>
+    <div class="bgm_btn">
+        <span class="bgm_btn_play"></span>
+        <span class="bgm_btn_stop"></span>
+        <span class="bgm_btn_next"></span>
+        <span class="bgm_btn_rest"></span>
+    </div>
+    <audio value="1" id="bgm" controls></audio>
+    <script>
+        window.onload=function(){
+            var bgm_echo=document.querySelector('.bgm_echo');
+            var bgm_btn_play=document.querySelector('.bgm_play');
+            var bgm_btn_stop=document.querySelector('.bgm_stop');
+            var bgm_btn_next=document.querySelector('.bgm_next');
+            var bgm=document.getElementById('bgm');
+        }
+        bgm_btn_play.onclick=function(){
+            bgm.play();
+        }
+        bgm_btn_stop.onclick=function(){
+            bgm.pause();
+        }
+        if(localStorage.getItem('bgm_gds')!=null){
+            bgm.set
+        }
+
+    </script>
+</body>
+<style>
+    .bgm_echo{
+        text-align: center;padding: 10px 0;
+    }
+    .bgm_btn{
+        width: 48px;
+        height: auto;
+        position: fixed;
+        top:150px;
+        left:10px;
+        
+    }
+    .bgm_btn>span{
+        color: #fff;
+        cursor: pointer;
+        display: block;
+        widows: 48px;
+        height: 48px;
+        margin-bottom: 10px;
+        background-color: #1a1a1a;
+        background-size: 70% 70%;
+        background-repeat: no-repeat;background-position: center;
+    }
+    .bgm_btn>span:nth-child(1){background-image: url(images/play.png);}
+    .bgm_btn>span:nth-child(2){background-image: url(images/pause.png);}
+    .bgm_btn>span:nth-child(3){background-image: url(images/next.png);}
+    .bgm_btn>span:nth-child(4){background-image: url(images/rest.png);}
+.bgm_btn>span:hover{
+    background-color: #29a2e3;
+}
+.bgm_btn>a{
+    display: block;
+    color:#0090dd;
+    font-weight: bolder;
+    margin: 20px;
+}
+#bgm{
+    display: none;
+}
+</style>
